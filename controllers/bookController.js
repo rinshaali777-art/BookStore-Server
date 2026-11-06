@@ -107,8 +107,8 @@ exports.bookPaynmentController=async(req,res)=>{
     bookId:id,
     buyerEmail:loginUserMail
    },
-   success_url:'http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}',
-   cancel_url:'http://localhost:5173/cancel'
+   success_url:'https://book-store-client-pi.vercel.app/success?session_id={CHECKOUT_SESSION_ID}',
+   cancel_url:'https://book-store-client-pi.vercel.app/cancel'
   });
   console.log(session)
   res.status(200).json({checkoutURL:session.url})
