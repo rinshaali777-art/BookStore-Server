@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:3000/add-student
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Amina fathima\",\r
+
+    \    \"age\": 21,\r
+
+    \    \"course\": \"MERN Stack\",\r
+
+    \    \"email\" :\"amina@gamail.com\"\r
+
+    }"
+order: 1000

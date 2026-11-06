@@ -1,0 +1,72 @@
+$kind: http-request
+url: http://localhost:3000/add-book
+method: POST
+headers:
+  Authorization: "{{bearer_token_1dyb}}"
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: The Alchemist
+      description: ""
+      disabled: false
+    - type: text
+      key: author
+      value: Paulo Coelho
+      description: ""
+      disabled: false
+    - type: text
+      key: pages
+      value: "208"
+      description: ""
+      disabled: false
+    - type: text
+      key: imageUrl
+      value: https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg
+      description: ""
+      disabled: false
+    - type: text
+      key: price
+      value: "399"
+      description: ""
+      disabled: false
+    - type: text
+      key: discountPrice
+      value: "299"
+      description: ""
+      disabled: false
+    - type: text
+      key: abstract
+      value: The story follows Santiago, a young shepherd who travels in search of treasure. Along his journey, he discovers valuable lessons about dreams, destiny, courage, and self-discovery.
+      description: ""
+      disabled: false
+    - type: text
+      key: publisher
+      value: HarperCollins
+      description: ""
+      disabled: false
+    - type: text
+      key: language
+      value: English
+      description: ""
+      disabled: false
+    - type: text
+      key: category
+      value: Fiction
+      description: ""
+      disabled: false
+    - type: text
+      key: isbn
+      value: "9780061122415"
+      description: ""
+      disabled: false
+    - type: file
+      key: uploadImages
+      src:
+        - postman-cloud:///1f1ce99f-954a-4bf0-a630-49eacfcffce3
+        - postman-cloud:///1f1ce99d-e58d-4d80-9392-78c222759cfe
+        - postman-cloud:///1f1ce99a-76a3-4670-a907-bfc0af0c1940
+      description: ""
+      disabled: false
+order: 2719

@@ -1,0 +1,23 @@
+$kind: http-request
+name: login
+url: http://localhost:3000/login
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "email": "rannan@gmail.com",
+        "password": "rannan12345"
+    }
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      const res = pm.response.json();
+      if (res && res.token) {
+          pm.collectionVariables.set("bearer_token_0oq4", res.token);
+          console.log("Token saved to bearer_token_0oq4");
+      } else {
+          console.warn("Login response did not contain a token:", JSON.stringify(res));
+      }
+order: 1665

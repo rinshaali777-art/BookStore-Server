@@ -1,0 +1,15 @@
+$kind: http-request
+description: ""
+url: http://localhost:3000/register
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {   
+        "username":"rannan",
+        "email": "rannan@gmail.com",
+        "password": "rannan123"
+    }
+order: 1000

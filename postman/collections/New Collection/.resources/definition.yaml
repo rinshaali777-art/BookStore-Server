@@ -1,0 +1,8 @@
+$kind: collection
+variables:
+  - key: bearer_token_0oq4
+    secret: true
+    disabled: false
+  - key: bearer_token_0qib
+    secret: true
+    disabled: false

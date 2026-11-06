@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:3000/book-update/6adc3680e7e414f41485d3dc
+method: PUT
+headers:
+  Authorization: "{{bearer_token_0qib}}"
+order: 5719
